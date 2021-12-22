@@ -1,29 +1,49 @@
-# README #
+# Teste Vertex: Desenvolvedor Mobile Kotlin #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Desenvolver um aplicativo mobile
 
-### What is this repository for? ###
+## Instruções
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Realizar um fork desse repositório na sua conta pessoal do GitHub, ou BitBucket.
+* Siga as especificações abaixo.
+* Crie um README com as instruções para compilar, testar e rodar o projeto.
+* O link do repositório deverá ser enviado para o e-mail r.madeira@vertexdigital.co com o título **Teste Desenvolvedor Mobile Kotlin**
 
-### How do I get set up? ###
+## Especificações técnicas
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Utilizar a [API de busca do YouTube](https://developers.google.com/youtube/v3/docs/)
+* Utilizar Androido Studio
+* Linguagem Kotlin
 
-### Contribution guidelines ###
+## Especificações funcionais
 
-* Writing tests
-* Code review
-* Other guidelines
+### Tela Inicial
 
-### Who do I talk to? ###
+Essa tela terá um campo texto de busca, centralizado verticalmente, com placeholder "Pesquisar" e um botão "Buscar", ao lado do campo "Pesquisar"
 
-* Repo owner or admin
-* Other community or team contact
+Esse formulario deverá ter validação pra não permitir chamadas de termos em branco ou contendo menos do que 3 caracteres.
+
+Essa busca deverá chamar a url https://www.googleapis.com/youtube/v3/search?type=video&part=id,snippet&q={termo_de_busca}&key={API_KEY}
+
+### Tela de Resultados
+
+Os resultados da busca do termo inserido pelo usuário deverão ser exibidos em uma nova tela, contendo no máximo 10 resultados.
+
+Cada resultado deve conter os campos título, descrição, thumbnail e um botão para a página de detalhes.
+
+Não é necessário fazer a paginação do retorno.
+
+### Tela de resultados
+
+A partir do videoId retornado em cada resultado da busca anterioro, deve ser feito uma chamada para https://www.googleapis.com/youtube/v3/videos?id={VIDEO_ID}&part=snippet,statistics&key={API_KEY}
+
+A partir desse retorno, deve-se montar uma tela contendo embed do video, título, descrição e visualizações.
+
+Essa tela deve ter um botão para voltar, exibindo os últimos resultados da busca com a página em questão ativa.
+
+
+## O que será avaliado?
+- Organização do projeto
+- Lógica do código
+- Uso do Git
+
