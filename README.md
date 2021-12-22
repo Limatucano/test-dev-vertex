@@ -7,7 +7,7 @@ Desenvolver um aplicativo mobile
 * Realizar um fork desse repositório na sua conta pessoal do GitHub, ou BitBucket.
 * Siga as especificações abaixo.
 * Crie um README com as instruções para compilar, testar e rodar o projeto.
-* O link do repositório deverá ser enviado para o e*mail **r.madeira@vertexdigital.co** com o título **Teste Desenvolvimento Mobile**
+* O link do repositório deverá ser enviado para o e-mail **r.madeira@vertexdigital.co** com o título **Teste Desenvolvimento Mobile**
 
 ## Especificações técnicas
 
