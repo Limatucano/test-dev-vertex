@@ -1,4 +1,4 @@
-# Teste Vertex: Desenvolvedor Mobile Kotlin #
+# Teste Vertex: Desenvolvedor(a) Mobile Kotlin #
 
 Desenvolver um aplicativo mobile
 
@@ -40,7 +40,7 @@ Não é necessário fazer a paginação do retorno.
 
 A partir do videoId retornado em cada resultado da busca anterior, deve ser feito uma chamada para https://www.googleapis.com/youtube/v3/videos?id={VIDEO_ID}&part=snippet,statistics&key={API_KEY}
 
-A partir desse retorno, deve*se montar uma tela contendo embed do video, título, descrição e visualizações.
+A partir desse retorno, devesse montar uma tela contendo embed do video, título, descrição e visualizações.
 
 Essa tela deve ter um botão para voltar, exibindo os resultados da busca.
 
