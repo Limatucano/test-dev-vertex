@@ -1,7 +1,5 @@
 # Teste Vertex: Desenvolvedor(a) Mobile Kotlin
 
-
-
 ## Instruções para compilar, testar e rodar o projeto
 
 ---
@@ -34,8 +32,6 @@
 
 - Vá em gradle.properties e crie a chave API_KEY e coloque a chave que foi criada no google cloud plataform, deve ficar assim API_KEY="suaChaveAqui"
 
-
-
 ### Testar e rodar o projeto
 
 - Após realizar os passos acima, já é possível realizar o build e testar o aplicativo, eu recomendo que utilize um dispositivo físico para testar.
@@ -46,17 +42,19 @@
 
 - pronto, já é possível testar e utilizar o aplicativo!
 
-
-
 ### Resultado
 
+- **![](https://lh6.googleusercontent.com/rX0HxI1MYW23-y5VknRAnur77yb59odd0kSS__euCP7BtU_-iQeWzUSTkKk4wLHwNC9DUUvJoQ5dir8lzdirqfy1aQWyPh7D778UQxY39-rokUwvyr96FDyWg8-LDo2u7sIbqGeL)**
 
+- **![](https://lh6.googleusercontent.com/qtA7GjqZCRvTaM866g-UUtK2GDrbUWgzxXhoN1v97EEcMPs5Cjed5Zsc_IpT-xUjBA1pXDtlRFsSLXkatfTEn1J3lOuMTxXTeq7QQQLEzvyAZNjtiVzLNT23QlhhaeGV-XOOzlIB)**
+
+- **![](https://lh3.googleusercontent.com/A6TRqNo1jGXFopQHrQMBQKUOgGbO3PFz9xM7JMBJyLHS9Lj8pgW73pGNZEVTh1qLPaYatbBSA0RgOe9JYyyDogEYlQcWxYaTug2TKxGmis05X0GGdDVtQb-nT_07BW1yV23k5h4o)**
+
+- **![](https://lh5.googleusercontent.com/nONBaW_Vn8dI4cYv07bhZv5vZPP0xSnMH20ovfUVqfvcQk0O4rwUkOub72WbEZpZk_shT6MQFH9l4eqxdGPyI-opKf9441N_FgaYcPniOfO5h1o5Sw3c_zbIzPf5HX9rjZRxEuJ7)**
 
 ## Instruções de desenvolvimento
 
 ---
-
-
 
 * Realizar um fork desse repositório na sua conta pessoal do GitHub, ou BitBucket.
 * Siga as especificações abaixo.

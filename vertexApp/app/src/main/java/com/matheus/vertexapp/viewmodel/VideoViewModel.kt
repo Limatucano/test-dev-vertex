@@ -28,7 +28,6 @@ class VideoViewModel(private val repository: VideoRespository)  : ViewModel(){
                     call: Call<DetailVideoResponse>,
                     response: Response<DetailVideoResponse>
                 ) {
-                    Log.d("TESTE body",response.body().toString() )
                     if(response.code() in 200..299){
                         val body = response.body()
                         detailVideo.postValue(body)
@@ -37,7 +36,6 @@ class VideoViewModel(private val repository: VideoRespository)  : ViewModel(){
                 }
 
                 override fun onFailure(call: Call<DetailVideoResponse>, t: Throwable) {
-                    Log.d("TESTE erro",t.message.toString())
                     failToGetDetailVideo.postValue("Erro ao se comunicar com a API")
                 }
 

@@ -1,16 +1,19 @@
 package com.matheus.vertexapp.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.matheus.vertexapp.R
+import com.matheus.vertexapp.data.model.DetailVideoResponse
 import com.matheus.vertexapp.data.model.IdVideo
 import com.matheus.vertexapp.data.model.VideoResponse
 import com.matheus.vertexapp.data.model.VideosResponse
@@ -48,6 +51,11 @@ class ResultFragment : Fragment(), VideosAdapter.OnClickItemListener {
         rvVideos.layoutManager = layoutManager
         rvVideos.adapter = videoItem?.let { VideosAdapter(it.items, this) }
 
+        viewModel.detailVideo.observe(requireActivity(),{
+            val direction = ResultFragmentDirections.actionResultFragmentToVideoActivity(it)
+            view.findNavController().navigate(direction)
+        })
+
     }
 
     override fun onCreateView(
@@ -58,13 +66,9 @@ class ResultFragment : Fragment(), VideosAdapter.OnClickItemListener {
         return viewBinding.root
     }
 
+
     override fun onItemClick(item: VideoResponse, position: Int) {
         viewModel.getStatisticVideo(item.id.videoId)
-        viewModel.detailVideo.observe(requireActivity(),{
-            val direction = ResultFragmentDirections.actionResultFragmentToVideoActivity(it)
-            view?.findNavController()?.navigate(direction)
-        })
-
     }
 
 }

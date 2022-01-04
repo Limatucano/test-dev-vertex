@@ -42,7 +42,6 @@ class VideoActivity : YouTubeBaseActivity() , YouTubePlayer.OnInitializedListene
         videoItem = args.videoItem
 
         viewBinding.btnBack.setOnClickListener {
-            onBackPressed()
             finish()
         }
         viewBinding.title.text = videoItem!!.items[0].snippet.title
