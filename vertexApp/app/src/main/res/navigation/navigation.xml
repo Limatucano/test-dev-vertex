@@ -26,19 +26,16 @@
             android:id="@+id/action_resultFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
         <action
-            android:id="@+id/action_resultFragment_to_detailVideoFragment"
-            app:destination="@id/detailVideoFragment" />
+            android:id="@+id/action_resultFragment_to_videoActivity"
+            app:destination="@id/videoActivity" />
     </fragment>
-    <fragment
-        android:id="@+id/detailVideoFragment"
-        android:name="com.matheus.vertexapp.view.DetailVideoFragment"
-        android:label="fragment_detail_video"
-        tools:layout="@layout/fragment_detail_video" >
-        <action
-            android:id="@+id/action_detailVideoFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+    <activity
+        android:id="@+id/videoActivity"
+        android:name="com.matheus.vertexapp.view.VideoActivity"
+        android:label="activity_video"
+        tools:layout="@layout/activity_video" >
         <argument
-            android:name="oneVideo"
-            app:argType="com.matheus.vertexapp.data.model.VideoResponse" />
-    </fragment>
+            android:name="videoItem"
+            app:argType="com.matheus.vertexapp.data.model.DetailVideoResponse" />
+    </activity>
 </navigation>

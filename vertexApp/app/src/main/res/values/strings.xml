@@ -6,4 +6,5 @@
     <string name="text_button_search">Buscar</string>
     <string name="title_result_screen">Resultados</string>
     <string name="text_btn_detail">Detalhe</string>
+    <string name="title_detail_screen">Detalhe</string>
 </resources>

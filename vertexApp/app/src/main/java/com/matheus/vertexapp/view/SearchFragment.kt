@@ -31,11 +31,11 @@ class SearchFragment : Fragment() {
         btnSearch.setOnClickListener {
             viewModel.filterVideos(query = inputSearch.text.toString())
         }
-        viewModel.allMovies.observe(requireActivity(),{
+        viewModel.allVideo.observe(requireActivity(),{
             val direction = SearchFragmentDirections.actionSearchFragmentToResultFragment(it)
             view.findNavController().navigate(direction)
         })
-        viewModel.failToGetAllMovies.observe(requireActivity(),{
+        viewModel.failToGetAllVideos.observe(requireActivity(),{
             Toast.makeText(requireActivity(),it,Toast.LENGTH_SHORT).show()
         })
 

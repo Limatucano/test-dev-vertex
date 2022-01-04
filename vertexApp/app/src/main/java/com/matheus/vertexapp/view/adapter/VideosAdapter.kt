@@ -36,7 +36,6 @@ class VideosAdapter(private val videos : List<VideoResponse>, var clickItemListe
         fun initialize(item: VideoResponse, action: OnClickItemListener, position: Int){
             setValuesToFields(item)
             btnDetail.setOnClickListener{
-                Log.d("TESTE", "tteste")
                 action.onItemClick(item, position)
             }
 
