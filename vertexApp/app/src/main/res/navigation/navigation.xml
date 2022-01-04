@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/searchFragment">
 
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.matheus.vertexapp.view.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.matheus.vertexapp.view.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="videos"
+            app:argType="com.matheus.vertexapp.data.model.VideosResponse" />
+        <action
+            android:id="@+id/action_resultFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_detailVideoFragment"
+            app:destination="@id/detailVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailVideoFragment"
+        android:name="com.matheus.vertexapp.view.DetailVideoFragment"
+        android:label="fragment_detail_video"
+        tools:layout="@layout/fragment_detail_video" >
+        <action
+            android:id="@+id/action_detailVideoFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="oneVideo"
+            app:argType="com.matheus.vertexapp.data.model.VideoResponse" />
+    </fragment>
 </navigation>

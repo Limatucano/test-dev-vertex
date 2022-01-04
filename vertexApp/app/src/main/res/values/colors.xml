@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="btn_color">#181818</color>
+    <color name="background">#181818</color>
+    <color name="appBar">#202020</color>
     <color name="black">#FF000000</color>
+    <color name="btn_detail">#CC0000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="description">#AAAAAA</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/white</color>
+    <color name="mtrl_outlined_icon_tint" tools:override="true">@color/white</color>
+    <color name="mtrl_indicator_text_color" tools:override="true">@color/white</color>
+    <color name="mtrl_outlined_stroke_color" tools:override="true">@color/white</color>
 </resources>

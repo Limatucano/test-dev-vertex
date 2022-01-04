@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/white" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/margin"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+        tools:text="Imagine Dragons e JID – Enemy (da série League of Legends: Arcane) | Videoclipe Oficial" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet sem in lorem condimentum portaLorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet sem in lorem condimentum portaLorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet sem in lorem condimentum porta" />
+
+    <TextView
+        android:id="@+id/btnDetail"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/btn_detail"
+        android:gravity="center"
+        android:text="@string/text_btn_detail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+</androidx.constraintlayout.widget.ConstraintLayout>
