@@ -19,6 +19,8 @@ import com.matheus.vertexapp.data.repository.VideoRespository
 import com.matheus.vertexapp.databinding.ActivityVideoBinding
 import com.matheus.vertexapp.viewmodel.VideoViewModel
 import com.matheus.vertexapp.viewmodel.VideoViewModelFactory
+import kotlin.math.ln
+import kotlin.math.pow
 
 class VideoActivity : YouTubeBaseActivity() , YouTubePlayer.OnInitializedListener {
     private lateinit var player: YouTubePlayerView
@@ -41,12 +43,25 @@ class VideoActivity : YouTubeBaseActivity() , YouTubePlayer.OnInitializedListene
 
         viewBinding.btnBack.setOnClickListener {
             onBackPressed()
+            finish()
         }
-        viewBinding.title.text = videoItem!!.items.get(0).snippet.title
-        viewBinding.description.text = videoItem!!.items.get(0).snippet.description
-        viewBinding.visualization.text = videoItem!!.items.get(0).statistics?.viewCount
+        viewBinding.title.text = videoItem!!.items[0].snippet.title
+        viewBinding.description.text = videoItem!!.items[0].snippet.description
+        viewBinding.visualization.text = formatVideoView(videoItem!!.items[0].statistics?.viewCount)
 
 
+
+    }
+
+    private fun formatVideoView(view : String?) : String{
+        val count = view?.toDouble()
+        if (count != null) {
+            if(count < 1000.0) return "$count visualizações"
+            val exp = (ln(count) / ln(1000.0)).toInt()
+
+            return String.format("%.1f%c visualizações",(count / 1000.0.pow(exp.toDouble())), "kMGTPE"[exp-1])
+        }
+        return "0 visualizações"
 
     }
 

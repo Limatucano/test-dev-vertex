@@ -10,11 +10,17 @@
 
 - Para conseguir usar o aplicativo é necessário criar o projeto no google cloud platform
 
-- **para isso clique em criar projeto![](https://lh6.googleusercontent.com/uCx1fuvpyF94R5KTUICBCrOwbPZPgiF8KiuAwTiW-dLazc9dOQojBdCZLGfjVvrMxas2QtvUXIeTfpacAOPDY1KDT3uDkE16vjCO-sdI0hEu2UIoY0wqftoWXHB8HyYWUznAeohX)**
+- Para isso clique em criar projeto
 
-- **insira o nome desejado![](https://lh6.googleusercontent.com/ZULviUZtP7au69El_bqjfv3l2spSr5PYJd6CSz8fcx4SMxx0BXYzRZ3hdGifQ4zAnk9APRz0QSZGDxwU6srhJnpS0U4NYFpc6Xb30JA5CVDYcVuWKUDhLRNxysFxeXOBWEQP14_0)**
+- ![](https://lh6.googleusercontent.com/uCx1fuvpyF94R5KTUICBCrOwbPZPgiF8KiuAwTiW-dLazc9dOQojBdCZLGfjVvrMxas2QtvUXIeTfpacAOPDY1KDT3uDkE16vjCO-sdI0hEu2UIoY0wqftoWXHB8HyYWUznAeohX)
 
-- **Crie uma chave de API![](https://lh5.googleusercontent.com/7-lf1jjWVV986fFZEUSvbaWib71LzvtJKfXH1QCEUsXpwjtu3IvJENXjrDtSqb_BooBgqRQgflkIHGp7UtpnYYuAKEqr96t8qT06dpBeZzdfCbwTzibjRWXkX3dDFqUGIW3Kwyn0)**
+- Insira o nome desejado
+
+- ![](https://lh6.googleusercontent.com/ZULviUZtP7au69El_bqjfv3l2spSr5PYJd6CSz8fcx4SMxx0BXYzRZ3hdGifQ4zAnk9APRz0QSZGDxwU6srhJnpS0U4NYFpc6Xb30JA5CVDYcVuWKUDhLRNxysFxeXOBWEQP14_0)
+
+- Crie uma chave de API
+
+- ![](https://lh5.googleusercontent.com/7-lf1jjWVV986fFZEUSvbaWib71LzvtJKfXH1QCEUsXpwjtu3IvJENXjrDtSqb_BooBgqRQgflkIHGp7UtpnYYuAKEqr96t8qT06dpBeZzdfCbwTzibjRWXkX3dDFqUGIW3Kwyn0)
 
 - Reserve essa chave, será usada no nosso aplicativo
 
